@@ -1,5 +1,5 @@
-﻿namespace Programming
-{
+﻿namespace Programming;
+
     public static  class RotateArray
     {
         public static void RotateArrayMethod(int[] nums,int k)
@@ -32,4 +32,4 @@
             }
         }
     }
-}
+
