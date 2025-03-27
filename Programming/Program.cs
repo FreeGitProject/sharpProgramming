@@ -10,7 +10,8 @@ namespace HelloWorld
             int[] nums = { 1, 2, 3, 4, 5, 6, 7 };
             int k = 3;
 
-            RotateArray.RotateArrayMethod(nums,k);
+            // RotateArray.RotateArrayMethod(nums,k);
+            Solution.PrintArray();
         }
     }
 }
