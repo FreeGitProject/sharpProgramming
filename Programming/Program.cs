@@ -1,5 +1,4 @@
 ﻿using Programming;
-using System;
 
 namespace HelloWorld
 {
