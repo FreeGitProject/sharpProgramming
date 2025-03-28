@@ -42,9 +42,27 @@
             }
 
         }
+        public static void TwoSum()
+        {
+            int[] nums = { 2, 7, 11, 15 };
+            int target = 9, i = 0, j = 0;
+            int len = nums.Length;
+            for (i = 0; i < len; i++)
+            {
+                for (j = i + 1; j < len; j++)
+                {
+                    if (nums[i] + nums[j] == target)
+                    {
+                        Console.WriteLine(" i is  " + i + " and j is " + j);
+                        //return new int[] { i, j };
+                    }
+                }
+            }
+            // return null;
+        }
 
     }
 
-  
-  
+    
+
 }
