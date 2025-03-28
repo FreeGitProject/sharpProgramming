@@ -60,6 +60,35 @@
             }
             // return null;
         }
+        public static void TwoSumuseDisnary()
+        {
+            //nums = [3,2,4], target = 6
+            //nums = [2,7,11,15], target = 9
+            int[] nums = { 2, 7, 11, 2, 15 };
+            int target = 9, i = 0, j = 0;
+            int len = nums.Length;
+            Dictionary<int, int> sub = new Dictionary<int, int>();
+
+            for (i = 0; i < len; i++)
+            {
+                int dif = target - nums[i];
+                //Console.WriteLine(" dif " + dif);
+                if (sub.ContainsKey(dif))
+                {
+                    Console.WriteLine(" i is  " + i + " and j is " + Convert.ToString(sub[dif]));
+
+                    return;
+                }
+
+                sub.Add(nums[i], i);
+
+            }
+            //foreach (KeyValuePair<int, int> kvp in sub)
+            //{
+            //    Console.WriteLine("Key = {0}, Value = {1}",
+            //                      kvp.Key, kvp.Value);
+            //}
+        }
 
     }
 

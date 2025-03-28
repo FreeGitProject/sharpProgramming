@@ -11,8 +11,9 @@ namespace HelloWorld
             int k = 3;
 
             // RotateArray.RotateArrayMethod(nums,k);
-         //   Solution.PrintArray();
-            Solution.TwoSum();
+            //   Solution.PrintArray();
+            //Solution.TwoSum();
+            Solution.TwoSumuseDisnary();
         }
     }
 }
