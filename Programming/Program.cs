@@ -1,4 +1,5 @@
 ﻿using Programming;
+using Programming.Encapsulation;
 
 namespace HelloWorld
 {
@@ -6,14 +7,27 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+           // Console.WriteLine("Hello World!");
             int[] nums = { 1, 2, 3, 4, 5, 6, 7 };
             int k = 3;
 
             // RotateArray.RotateArrayMethod(nums,k);
             //   Solution.PrintArray();
             //Solution.TwoSum();
-            Solution.TwoSumuseDisnary();
+            //Solution.TwoSumuseDisnary();
+           // Students obj = new Students();
+
+            //obj.Name = "";
+            //obj.Age = -5;
+            //obj.SetName("");
+            //obj.GetName();
+            //obj.SetAge(-225);
+            //obj.GetAge();
+
+            BankAccount obj = new BankAccount();
+            Console.WriteLine("Intial Balance : " + obj.GetBalance());
+            obj.Deposit(23);
+            Console.WriteLine(obj.GetBalance());
         }
     }
 }
