@@ -7,6 +7,11 @@ namespace Programming
         private string Name;
         private int Age;
 
+        public string SetGetName
+        {
+            get { return Name;}
+            set { Name =value; }
+        }
         public void GetName()
         {
             if (string.IsNullOrEmpty(this.Name))
