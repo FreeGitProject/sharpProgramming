@@ -1,5 +1,6 @@
 ﻿using Programming;
 using Programming.Abstract;
+using Programming.Dipendency_Injecttion;
 using Programming.Encapsulation;
 
 namespace HelloWorld
@@ -35,8 +36,9 @@ namespace HelloWorld
 
 
 
-
-            CalulatorAbstract calulatorAbstract = new CalulatorAbstract();
+            Account a = new Account();  
+            a.PrintDetail();
+            //CalulatorAbstract calulatorAbstract = new CalulatorAbstract();
 
         }
     }
