@@ -13,7 +13,7 @@ namespace HelloWorld
         public string name { get; set; }
       //  private dateOfBirth;
    // private city;
-string FullName(string name + "city");
+string FullName(string name );
     }
     public  class A
     {
