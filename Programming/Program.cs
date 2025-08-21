@@ -7,129 +7,42 @@ using System.Runtime.InteropServices;
 
 namespace HelloWorld
 {
-    interface IEmplyee
+    public class BaseClass
     {
-    public string id { get; set; }
-        public string name { get; set; }
-      //  private dateOfBirth;
-   // private city;
-string FullName(string name );
-    }
-    public  class A
-    {
-
-        public  void Add()
+        public virtual void DoWork()
         {
-
-            Console.WriteLine("Hello A");
+            Console.WriteLine("BaseClass DoWork");
         }
-        //public abstract void Add();
-
-    }
-    public class B : A
-    {
-        public virtual void Add()
+        public virtual int WorkProperty
         {
-            Console.WriteLine("Hello B");
+            get { return 0; }
         }
-
     }
-    public class C : B
+    public class DerivedClass : BaseClass
     {
-
-       // private static C _c = new C();
-        // static C()
-        //{
-        //    Console.WriteLine("c ka static constructure");
-        //}
-        //private C()
-        //{
-        //        Console.WriteLine("Defaut constru");
-        //}
-        //public C( string g)
-        //{
-        //    Console.WriteLine(  "parameter");
-        //}
-        //public static C CreateInstance()
-        //{
-        //    return _c;
-        //}
-        public override void Add()
+       
+        public override void DoWork() 
         {
-            base.Add();
-            Console.WriteLine("Hello C");
+            Console.WriteLine("DrivedClass DoWork");
         }
-        public int GetCustomerInfo(string customerId)
-
+        public override int WorkProperty
         {
-            return 1;
-            //Method implementation
-
+            
+            get { return 0; }
         }
-
-        public string GetCustomerInfo(string customerId,int no=0)
-        {
-            return "d";//string.Empty;
-            //Method implementation 
-        } 
+        
     }
-        class Program
+    class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-         //   int a = 8;
-           // B b1 = new A();
-            A objA = new B();
-            B objB = new B();
-            C objectC = new C();
-            // A objC = new C();
-            //   C objC = new C();
-            // B objB1 = new C();
-            //  A a1 = new A();
-            objA.Add();//a
-            objB.Add();//b
-          //  objC.Add();//b
-           // objB1.Add();//c
-            ArrayList aa = new ArrayList();
-            aa.Add("dd");
+            DerivedClass B = new DerivedClass();
+            B.DoWork();  // Calls the new method.
 
-           
-            objectC.Add();
-
-            //Console.Write(objC.GetCustomerInfo("23"));
-            //Console.Write(objC.GetCustomerInfo("23",1));
-
-            //var h = C.GetCustomerInfoh("jhf");
-            //a1.Add();   //a
-            // Console.WriteLine("Hello World!");
-            //int[] nums = { 1, 2, 3, 4, 5, 6, 7 };
-            //int k = 3;
-
-            // RotateArray.RotateArrayMethod(nums,k);
-            //   Solution.PrintArray();
-            //Solution.TwoSum();
-            //Solution.TwoSumuseDisnary();
-            // Students obj = new Students();
-            //var s= obj.SetGetName = "asd";
-            // Console.WriteLine("Name is : " + s);
-            //obj.Name = "";
-            //obj.Age = -5;
-            //obj.SetName("");
-            // obj.GetName();
-            //obj.SetAge(-225);
-            //obj.GetAge();
-
-            //BankAccount obj = new BankAccount();
-            //Console.WriteLine("Intial Balance : " + obj.GetBalance());
-            //obj.Deposit(23);
-            //Console.WriteLine(obj.GetBalance());
-
-
-
-            // Account a = new Account();  
-            // a.PrintDetail();
-            //CalulatorAbstract calulatorAbstract = new CalulatorAbstract();
+            BaseClass A = B;
+            A.DoWork();  // Also calls the new method.
 
         }
     }
 }
+//due to add new project not use console app
