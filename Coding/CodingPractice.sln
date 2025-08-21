@@ -19,13 +19,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.Tests", "Dat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox", "Sandbox\Sandbox.csproj", "{895DB07E-7C4D-46B0-BD83-8FDDDB8246E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPoly", "TestPoly\TestPoly.csproj", "{7C2BB4D2-87A0-4A53-8CBA-91C229E46AA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{3687F9AA-7C7D-479F-919C-0E33D786104B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -60,5 +59,12 @@ Global
 		{895DB07E-7C4D-46B0-BD83-8FDDDB8246E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{895DB07E-7C4D-46B0-BD83-8FDDDB8246E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{895DB07E-7C4D-46B0-BD83-8FDDDB8246E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C2BB4D2-87A0-4A53-8CBA-91C229E46AA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C2BB4D2-87A0-4A53-8CBA-91C229E46AA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C2BB4D2-87A0-4A53-8CBA-91C229E46AA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C2BB4D2-87A0-4A53-8CBA-91C229E46AA3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
