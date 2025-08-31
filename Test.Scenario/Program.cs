@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Test.Scenario.Data;
 using Test.Scenario.Services;
+using Test.Scenario.Services.Messages;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +18,10 @@ options.UseSqlServer(connecctionstring)
 );
 
 builder.Services.AddScoped<IResumeTextExtractor, ResumeTextExtractor>();
+// Program.cs
+builder.Services.AddScoped<IMessageService, EmailService>();
+builder.Services.AddScoped<IMessageService, SMSService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -4,3 +4,5 @@ GET {{Test.Scenario_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+GET {{Test.Scenario_HostAddress}}/api/notification/
+Accept: application/json
